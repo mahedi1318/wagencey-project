@@ -1,0 +1,1381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* =================================================================
+      header part start
+===================================================================*/
+header{
+    width: 100%;
+    /* height: 50px;
+    background: red; */
+    position: relative; 
+    position: absolute;    
+    top: 0;
+    left: 0;    
+}
+
+header:after{
+    width: 100%;
+    height: 1px;
+    background: rgb(151, 148, 148);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+header .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header_icon{
+    width: 50%;
+    /* height: 50px;
+    background: rgb(241, 233, 233); */
+}
+
+header .header_icon i {
+	font-size: 19px;
+	margin-right: 25px;
+	padding: 15px 0;
+    transition: .4s;
+    color: #fff;
+}
+
+header .header_text{
+    width: 50%;
+    /* height: 50px;
+    background: rgb(13, 46, 235); */
+}
+
+header .header_text .contact{
+    text-align: right;
+    padding: 12px 0;
+}
+
+header .header_text .contact a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	margin-left: 30px;
+}
+
+header .header_text .contact a i {
+	margin-right: 17px;
+    color: rgb(243, 84, 68);
+}
+
+header .header_icon i:hover{
+    color: rgb(243, 84, 68);
+}
+/* =================================================================
+      header part end
+===================================================================*/
+
+/* =================================================================
+      nav bar part start
+===================================================================*/
+nav {
+	position: absolute;
+	top: 55px;
+	left: 0;
+	width: 100%;
+}
+
+nav .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav_logo{
+    width: 50%;
+    /* height: 100px;
+    background: rgb(119, 97, 97); */
+}
+
+nav .nav_logo a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 800;
+	color: #000;
+	padding: 20px 0;
+	display: inline-block;
+    color: #fff;
+}
+
+nav .nav_logo a span{
+    color: #f35444;
+}
+
+nav .nav_menu{
+    width: 50%;
+    /* height: 100px;
+    background: rgb(160, 144, 144); */
+}
+
+nav .nav_menu .details ul {
+	text-align: right;
+	padding: 40px 0;
+}
+
+nav .nav_menu .details ul li{
+    display: inline-block;
+    font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 35px;
+}
+
+nav .nav_menu .details ul li a{
+    color: #fff;
+    position: relative;
+    transition: .4s;
+}
+
+nav .nav_menu .details ul li a::after{
+    width: 0%;
+    height: 3px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    transition: .4s;
+}
+
+nav .nav_menu .details ul li i{
+    color: #fff;
+}
+
+nav .nav_menu .details ul li a i {
+	font-size: 10px;
+	margin-left: 5px;
+    color: #fff;
+}
+
+nav .nav_menu .details ul li a:hover{
+    color: #f35444;
+}
+
+nav .nav_menu .details ul li a:hover:after{
+    width: 50%;    
+}
+
+
+
+/* =================================================================
+      nav bar part end
+===================================================================*/
+
+/* =================================================================
+      banner part start
+===================================================================*/
+#banner_part{
+    height: 1100px;
+    background: url(../images/banner\ img\ 1.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+#banner_part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner_part .text{
+    width: 70%;    
+    margin-top: 200px;
+    z-index: 1;
+}
+
+#banner_part .text h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 80px;
+	font-weight: 900;
+	width: 845px;
+	color: #fff;
+	margin-top: 136px;
+}
+
+#banner_part .text h1 span{
+    color: #f35444;
+}
+
+#banner_part .text p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	width: 638px;
+	color: #fff;
+	margin-top: 35px;
+}
+
+#banner_part .text a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #fff;
+	display: inline-block;
+	padding: 8px 57px;
+	border-radius: 30px;
+	border: 2px solid #f35444;
+	margin-top: 33px;
+    transition: .4s;
+}
+
+#banner_part .img{
+    width: 30%;    
+    margin-top: 200px;
+    
+}
+
+#banner_part .img .img{
+    position: relative;
+}
+
+#banner_part .img .img img {
+	position: absolute;
+	top: -204px;	
+	left: -273px;
+	width: 943%;
+	z-index: 0;
+}
+
+#banner_part .text a:hover{
+    background: #fff;
+    color: #f35444;
+    border: 2px solid #fff;
+}
+/* =================================================================
+      banner part end
+===================================================================*/
+
+/* =================================================================
+                 about part start
+===================================================================*/
+#about_part{
+    /* height: 900px;
+    background: red; */
+    margin-bottom: 200px;
+}
+
+#about_part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about_part .about_img{
+    width: 40%;
+    /* height: 600px;
+    background: green; */
+}
+
+#about_part .about_img .img{
+    position: relative;
+    z-index: 0;
+}
+
+#about_part .about_img .img img {
+	position: absolute;
+	top: 0;
+	left: -135px;
+}
+
+#about_part .about_text{
+    width: 50%;
+    /* height: 600px;
+    background: rgb(65, 110, 65); */
+    z-index: 1;
+}
+
+#about_part .about_text h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 43px;
+	margin-top: 100px;
+}
+
+#about_part .about_text h2 span{
+    color: #f35444;
+    text-transform: capitalize;
+}
+
+#about_part .about_text h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 31px;
+	margin-top: 36px;
+}
+
+#about_part .about_text p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-top: 34px;
+	width: 577px;
+    color: #666666;
+}
+
+#about_part .about_text a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
+	display: inline-block;
+	padding: 8px 50px;
+	border: 2px solid #f35444;
+	border-radius: 30px;
+	margin-top: 50px;   
+    transition: .4s;   
+}
+
+#about_part .about_text .img{
+    position: relative;
+}
+
+#about_part .about_text .img img {
+	position: absolute;
+	top: -26px;
+	left: 484px;
+	width: 52%;
+}
+
+#about_part .about_text a:hover{
+    background: #000;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+
+
+/* =================================================================
+                 about part end
+===================================================================*/
+
+/* =================================================================
+                 service part start
+===================================================================*/
+#service_part{
+    padding: 150px 0;
+    background: url(../images/Servicess\ img\ 1.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+#service_part .title h2{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#service_part .title h2 span{
+    color: #000;
+    text-transform: capitalize;
+}
+
+#service_part .title p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	color: #fff;
+	width: 716px;
+	line-height: 32px;
+	margin-top: 35px;
+}
+
+#service_part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#service_part .item_text{
+    width: 60%; 
+    margin-top: 50px;
+}
+
+#service_part .item_text .main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+#service_part .item_text .item_one{
+    width: 45%;   
+    margin-bottom: 100px;
+}
+
+#service_part .item_text .item_one .text h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 20px;
+    color: #fff;
+}
+
+#service_part .item_text .item_one .text p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	margin-top: 8px;
+    color: #fff;
+}
+
+#service_part .item_text .item_one .text a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #f35444;
+	display: inline-block;
+	padding: 8px 30px;
+	background: #fff;
+	border-radius: 30px;
+	margin-top: 30px;
+    transition: .4s;
+}
+
+#service_part .item_text .item_two{
+    width: 45%;    
+    margin-bottom: 100px;
+}
+
+#service_part .item_text .item_two .text h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 20px;
+    color: #fff;
+}
+
+#service_part .item_text .item_two .text p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	margin-top: 8px;
+    color: #fff;
+}
+
+#service_part .item_text .item_two .text a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #f35444;
+	display: inline-block;
+	padding: 8px 30px;
+	background: #fff;
+	border-radius: 30px;
+	margin-top: 30px;
+    transition: .4s;
+}
+
+#service_part .item_img{
+    width: 40%;    
+    margin-top: 50px;
+}
+
+#service_part .item_img .img{
+    position: relative;
+}
+
+#service_part .item_img .img img {
+	position: absolute;
+	top: -127px;
+	left: 38px;
+}
+
+#service_part .item_text .item_one .text a:hover{
+    background: #000;
+    color: #fff;
+}
+
+#service_part .item_text .item_two .text a:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* =================================================================
+                 service part end
+===================================================================*/
+
+/* =================================================================
+                 packages part start
+===================================================================*/
+#packages_part{
+    margin-bottom: 200px;
+}
+
+#packages_part .title{
+    text-align: center;
+}
+
+#packages_part .title h2{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+    color: #222;
+    text-transform: capitalize;
+}
+
+#packages_part .title h2 span{
+    color: #f35444;
+}
+
+#packages_part .title h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	color: #222222;
+	margin-top: 30px;
+}
+
+#packages_part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#packages_part .item {
+	width: 31.5%;
+	height: 600px;
+	border: 1px solid #dddddd;
+	margin-top: 50px;
+	padding: 50px 70px 30px 70px;
+}
+
+#packages_part .item .details h2{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+#packages_part .item .details ul{
+    margin-top: 30px;
+}
+
+#packages_part .item .details ul li {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	color: #666666;
+	line-height: 37px;
+}
+
+#packages_part .item .details ul li i{
+    margin-right: 10px;
+    color: #51c672;
+}
+
+#packages_part .item .details .contant_pricing{
+    margin-top: 25px;
+}
+
+#packages_part .item .details .contant_pricing .contant_currency {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+	color: #666666;
+	margin-right: 15px;
+}
+
+#packages_part .item .details .contant_pricing .contant_price{
+    font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 35px;
+	font-weight: 900;
+}
+
+#packages_part .item .details .contant_pricing .content_duration{
+    font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+#packages_part .item .details a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #666666;
+	display: inline-block;
+	padding: 9px 68px;
+	border: 2px solid #f35444;
+	border-radius: 30px;
+	margin-top: 34px;
+    transition: .4s;
+}
+
+#packages_part .item .details a:hover{
+    background: #000;
+    color: #fff;
+    border: 2px solid #000;
+}
+/* =================================================================
+                 packages part end
+===================================================================*/
+
+/* =================================================================
+                 the latest part start
+===================================================================*/
+#latest_part{
+    padding: 130px 0;
+    background: url(../images/latest\ img\ 1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#latest_part .latest_menu .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#latest_part .latest_menu .latest_title{
+    width: 50%;   
+}
+
+#latest_part .latest_menu .latest_title h2{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 500;    
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#latest_part .latest_menu .latest_title h2 span{
+    color: #f35444;
+}
+
+#latest_part .latest_menu .latest_link{
+    width: 50%;
+    /* height: 70px;
+    background: rgb(197, 156, 156); */
+    text-align: right;
+}
+
+#latest_part .latest_menu .latest_link a{
+    font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #666666;
+	display: inline-block;
+	padding: 9px 72px;
+	border: 2px solid #f35444;
+	border-radius: 30px;
+    color: #fff;	
+    margin-top: 8px;
+    transition: .4s;
+}
+
+#latest_part .latest_menu .latest_link a:hover{
+    background: #222222;
+    border: 2px solid #222222;
+}
+
+#latest_part .details{
+    margin-top: 55px;
+}
+
+#latest_part .details .main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#latest_part .details .item {
+	width: 31.6%;
+	/* height: 370px;
+	background: red; */
+	margin-bottom: 40px;
+}
+
+#latest_part .details .item .img img{
+    width: 100%;    
+}
+
+#latest_part .details .item .img{
+    position: relative;
+}
+
+#latest_part .details .item .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 84, 68, 0.80);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0,0);
+    transition: .4s;
+}
+
+#latest_part .details .item .img .overlay .text {
+	text-align: center;
+	margin-top: 131px;
+}
+
+#latest_part .details .item .img .overlay .text h3{
+    font-family: 'Catamaran', sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+    color: #fff;
+}
+
+#latest_part .details .item .img .overlay .text a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	padding: 6px 40px;
+	background: #fff;
+	display: inline-block;
+	border-radius: 30px;
+	color: #f35444;
+	margin-top: 20px;
+}
+
+#latest_part .details .item .img:hover .overlay{
+    transform: scale(1);
+}
+/* =================================================================
+                 the latest part end
+===================================================================*/
+
+/* =================================================================
+                 Our clients part start
+===================================================================*/
+#our_clients_part{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#our_clients_part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#our_clients_part .item_text{
+    width: 40%;
+    /* height: 400px;
+    background: rgb(92, 85, 85); */
+}
+
+#our_clients_part .item_text h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin-top: 64px;
+}
+
+#our_clients_part .item_text h2 span{
+    color: #f35444;
+}
+
+#our_clients_part .item_text h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	margin-top: 30px;
+}
+
+#our_clients_part .item_text a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 8px 50px;
+	border: 2px solid #f35444;
+	color: #222222;
+	border-radius: 30px;
+	margin-top: 54px;
+    transition: .4s;
+}
+
+#our_clients_part .item_text .img{
+    position: relative;
+}
+
+#our_clients_part .item_text .img img {
+	position: absolute;
+	top: 0;
+	left: 212px;
+}
+
+#our_clients_part .item_img{
+    width: 55%;
+    /* height: 400px;
+    background: rgb(187, 143, 143); */
+}
+
+#our_clients_part .item_img .main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#our_clients_part .item_img .item {
+	width: 30%;
+	height: 174px;
+	border: 1px solid #dddddd;
+	margin-bottom: 20px;
+}
+
+#our_clients_part .item_img .item .img img{
+    width: 100%;
+}
+
+#our_clients_part .item_text a:hover{
+    background: #222222;
+    color: #fff;
+    border: 2px solid #222222;
+}
+/* =================================================================
+                 Our clients part end
+===================================================================*/
+
+/* =================================================================
+                Testimonials part start
+===================================================================*/
+
+#testimonial_part{
+    margin-bottom: 200px;
+}
+
+#testimonial_part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#testimonial_part .item_one{
+    width: 50%;
+    height: 800px;
+    background: url(../images/testimonial\ img\ 1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#testimonial_part .item_one .item{
+    width: 100%;
+    /* height: 800px;
+    background: green; */
+    position: relative;
+}
+
+#testimonial_part .item_one .item .details {
+	position: absolute;
+	top: 169px;
+	left: 112px;
+}
+
+#testimonial_part .item_one .item .details h2{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: capitalize;
+    color: #fff;
+}
+
+#testimonial_part .item_one .item .details h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	color: #fff;
+	margin-top: 31px;
+}
+
+#testimonial_part .item_one .item .details .round {
+	width: 45px;
+	height: 45px;
+	/* background: red; */
+	border-radius: 50%;
+	margin-top: 70px;
+}
+
+#testimonial_part .item_one .item .details .round img{
+    width: 100%;
+}
+
+#testimonial_part .item_one .item .details h5 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	color: #fff;
+	margin-top: 30px;
+}
+
+#testimonial_part .item_one .item .details p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	color: #fff;
+	width: 634px;
+	line-height: 34px;
+	margin-top: 16px;
+}
+
+#testimonial_part .item_one .img {
+	position: absolute;
+	bottom: -139px;
+	right: -340px;
+}
+
+
+#testimonial_part .item_two{
+    width: 42%;
+    /* height: 800px;
+    background: rgb(77, 70, 70); */
+    position: relative;
+}
+
+#testimonial_part .item_two .text_details {
+	position: absolute;
+	top: 122px;
+	left: 0;
+}
+
+#testimonial_part .item_two .text_details h2{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: capitalize;
+    color: #000;
+}
+
+#testimonial_part .item_two .text_details h2 span{
+    color: #f35444;
+}
+
+#testimonial_part .item_two .text_details .text_item{
+    margin-top: 50px;
+}
+
+#testimonial_part .item_two .text_details .text_item .item {
+	width: 150%;	
+	margin-bottom: 52px;
+}
+
+#testimonial_part .item_two .text_details .text_item .item .text {
+	margin-left: 68px;	
+}
+
+#testimonial_part .item_two .text_details .text_item .item .text h4 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: -37px;
+    color: #222222;
+}
+
+#testimonial_part .item_two .text_details .text_item .item .text p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	width: 561px;
+	margin-top: 7px;
+    color: #666666;
+}
+
+
+/* =================================================================
+                Testimonials part end
+===================================================================*/
+
+/* =================================================================
+                 free prototype part start
+===================================================================*/
+/* #free_prototype_part{
+    margin-bottom: 100px;
+} */
+
+#free_prototype_part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#free_prototype_part .item_one{
+    width: 50%;  
+}
+
+#free_prototype_part .item_one h2{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+    text-transform: capitalize;
+}
+
+#free_prototype_part .item_one h2 span{
+    color: #f35444;
+}
+
+#free_prototype_part .item_one p{
+    font-family: 'Catamaran', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+    line-height: 33px;   
+    margin-top: 40px;
+    color: #666666;
+}
+
+#free_prototype_part .item_one form{
+    margin: 60px 0;
+}
+
+#free_prototype_part .item_one .input-f {
+	width: 274px;
+	height: 54px;
+	margin-right: 16px;
+	border-radius: 30px;
+	border: 2px solid #6666;
+	outline: 0;
+	margin-bottom: 20px;
+	padding-left: 20px;
+    font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+#free_prototype_part .item_one .input-ff {
+	width: 570px;
+	height: 140px;
+	border-radius: 27px;
+	resize: none;
+	border: 2px solid #6666;
+	outline: none;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	padding-left: 20px;
+	padding-top: 16px;
+}
+
+#free_prototype_part .item_one button {	
+    background: transparent;
+	padding: 11px 78px;
+	border: 2px solid #f35444;
+	outline: none;
+	color: #666;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 30px;
+	margin-top: 23px;
+    transition: .4s;
+}
+
+#free_prototype_part .item_one button:hover{
+    background: #222;
+    color: #fff;
+    border: 2px solid #222;
+}
+
+#free_prototype_part .item_two{
+    width: 50%;    
+}
+
+#free_prototype_part .item_two .img{
+    position: relative;  
+    z-index: -1; 
+}
+
+#free_prototype_part .item_two .img img {
+	position: absolute;
+	top: 176px;
+	left: 62px;  
+}
+
+/* =================================================================
+                 free prototype part end
+===================================================================*/
+
+/* =================================================================
+                 footer part start
+===================================================================*/
+footer{
+    padding: 90px 0;
+    background: #151823;   
+    margin-top: 65px;
+}
+
+footer .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .item_one{
+    width: 29%;
+    /* height: 400px;
+    background: rgb(66, 62, 62); */
+}
+
+footer .item_one h3{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+footer .item_one h3::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #4d4c4c;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
+footer .item_one p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #7e8399;
+	margin-top: 60px;
+	line-height: 26px;
+	width: 300px;
+}
+
+footer .item_one .title {
+	margin-top: 15px;
+}
+
+footer .item_one .title .details .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .item_one .title .details .icon {
+	width: 5%;
+	margin-top: 17px;
+}
+
+footer .item_one .title .details .text {
+	width: 95%;
+	margin-top: 14px;
+}
+
+footer .item_one .title .details .text a{
+    color: #ffffff;
+    font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+footer .item_one .icon-one {
+	padding-left: 126px;	
+	margin: -21px 0;	
+}
+
+footer .item_one .icon-one i{
+    margin-right: 20px;
+    font-size: 17px;
+    color: #fff;
+    transition: .4s;
+}
+
+footer .item_one .icon-one i:hover{
+    color: #f35444;
+}
+
+footer .item_two{
+    width: 29%;
+    /* height: 400px;
+    background: rgb(63, 59, 59); */
+}
+
+footer .item_two h3{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+footer .item_two h3::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #4d4c4c;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
+footer .item_two .item {
+	width: 100%;
+	margin-top: 59px;
+	margin-bottom: -22px;
+}
+
+footer .item_two .item h6{
+    font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+    color: #7e8399;
+}
+
+footer .item_two .item a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #fff;
+	display: inline-block;
+	margin-top: 11px;
+    transition: .4s;
+}
+
+footer .item_two .item a:hover{
+    color: #f35444;
+}
+
+
+footer .item_three{
+    width: 29%;
+    /* height: 400px;
+    background: rgb(63, 60, 60); */
+}
+
+footer .item_three h3{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+footer .item_three h3::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #4d4c4c;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
+footer .item_three p {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #7e8399;
+	margin-top: 60px;
+	line-height: 26px;
+	width: 300px;
+}
+
+footer .item_three form{
+    margin: 35px 0;
+}
+
+footer .item_three .input-f {
+	width: 339px;
+	height: 50px;
+	border-radius: 30px;
+	border: 2px solid #9296a4;
+	outline: none;
+	background: transparent;
+	text-align: center;
+    font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+    color: #fff;
+}
+
+footer .item_three button {
+	width: 339px;
+	height: 50px;
+	border-radius: 30px;
+	border: 2px solid #f35444;
+	outline: none;
+	background: transparent;
+	text-align: center;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 22px;
+    transition: .4s;
+}
+
+footer .item_three button:hover{
+    background: #f35444;
+}
+/* =================================================================
+                 footer part end
+===================================================================*/
+
+/* =================================================================
+                 sub footer part start
+===================================================================*/
+#sub_footer_part{
+    padding: 30px;
+    background: #1b2032;
+}
+
+#sub_footer_part .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub_footer_part .item_one{
+    width: 60%;
+    /* height: 20px;
+    background: red; */
+}
+
+#sub_footer_part .item_one p{
+    font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+    color: #7e8399;
+}
+
+#sub_footer_part .item_one a{
+    color: #7e8399;
+    text-decoration: underline;
+}
+
+#sub_footer_part .item_two{
+    width: 40%;    
+}
+
+#sub_footer_part .item_two p{
+    font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+    color: #7e8399;
+    text-align: right;
+}
+
+#sub_footer_part .item_two a{
+    color: #7e8399;
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* =================================================================
+                 sub footer part end
+===================================================================*/
